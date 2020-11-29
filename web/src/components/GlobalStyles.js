@@ -1,50 +1,23 @@
-import { createGlobalStyle, css } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
-const headers = [1, 2, 3, 4, 5, 6].map(n => `h${n}`).join(', ')
 
-const GlobalStyles = createGlobalStyle(
-  ({ theme: { colors } }) => css`
+const GlobalStyles = createGlobalStyle `
     * {
       box-sizing: border-box;
     }
     html,
-    body,
-    #root {
+    body
+    {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      color: ${colors.text.main};
-      background-color: ${colors.background};
-      display: flex;
-      flex: 1 1 auto;
-      flex-direction: column;
+      font-size: 62.5%;
       min-height: 0;
       max-height: 100%;
       overflow: hidden;
     }
-    header,
-    main {
-      display: flex;
-      flex-direction: column;
+    body {
+      font-size: 1.6rem;
     }
-    header {
-      flex: 0 0 auto;
-    }
-    main {
-      flex: 0 1 auto;
-      min-height: 0;
-      max-height: 100%;
-      overflow: hidden;
-    }
-    ${headers}, p {
-      margin: 0;
-    }
-    ${headers} {
-      font-family: 'Red Hat Display', sans-serif;
-      font-weight: 500;
-      letter-spacing: -1px;
-    }
-  `,
-)
-
+`
 export default GlobalStyles
     
