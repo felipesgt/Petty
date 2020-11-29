@@ -1,10 +1,10 @@
 import React from 'react'
-import Main from './components/Main/Main'
+import Routes from './routes';
 
 const App = () => {
   return (
     <div>
-        <Main />
+      <Routes />
     </div>
   )
 }
