@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../Header/Header';
+import Header from '../../components/Header/Header';
 import './MainStyles.css'
 import img from '../../assets/husky-nobg.png'
 
@@ -11,16 +11,13 @@ const Main = () => {
         <div className="container">
           <div>
             <h2>
-              Conecte-se e compartilhe uma foto do seu pet!
+            Encontre armas de fogo para o seu pet :3
             </h2>
             <p>
-            No meio de tanta informação e da quantidade de ferramentas que
-            surgem todos os dias, você precisa de alguém que te leve na direção
-            certa.
-            </p>
-            <a href="/" class="button">Quero participar!</a>
+              
+Atendimento 24 horas para diversos tipos de pets, aqui na Petty seu pet tem o cuidado e carinho que merece</p>
+            <a href="/" class="button">Quero agendar!</a>
           </div>
-
           <img
           src={img}
           alt=""

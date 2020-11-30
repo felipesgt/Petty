@@ -1,34 +1,30 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
-
-
-import './styles.css';
 import logo from '../../assets/Halloween.svg'
 
 
+import {Container, Img, Item, List, NavLink} from './styles';
 const Header = () => {
   return (
         <>
-          <header>
-            <div className="container">
-            <img
-          src={logo}
-          alt=""
-        />           
-        <nav>
-            <ul>
-              <li>
-                <Link to="/login">Login</Link>
-                </li>
-
-              <li>
-                <a href="/">Register</a>
-                </li>
-            </ul>
-          </nav>
-          </div>
-          </header>
-          
+        <Container>
+      <Img src={logo} />  
+      <nav>      
+          <List>
+              <Item>
+                <NavLink to="/login">Especialidades</NavLink>
+                </Item>
+                <Item>
+              <NavLink to="/">Serviços</NavLink>
+                </Item>
+                <Item>
+              <NavLink to="/">Agendamento</NavLink>
+                </Item>
+                <Item>
+              <NavLink to="/">Contato</NavLink>
+                </Item>
+                </List>
+                </nav>
+          </Container>
    </>
   )
 }
