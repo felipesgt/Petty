@@ -1,30 +1,27 @@
 import React from 'react'
 import Header from '../../components/Header/Header';
-import './MainStyles.css'
 import img from '../../assets/husky-nobg.png'
-
+import {Wrapper, Container, Title, Text, Span, Button, Img} from './styles';
 const Main = () => {
   return (
         <>
       <Header/> 
-      <section class="hero">
-        <div className="container">
+      <Wrapper class="hero">
+        <Container>
           <div>
-            <h2>
-            Encontre armas de fogo para o seu pet :3
-            </h2>
-            <p>
-              
-Atendimento 24 horas para diversos tipos de pets, aqui na Petty seu pet tem o cuidado e carinho que merece</p>
-            <a href="/" class="button">Quero agendar!</a>
+            <Title>
+            Aqui na Petty seu <Span>pet</Span> tem o cuidado e carinho que merece
+            </Title>
+            <Text>        
+      Atendimento especializado 24 horas para diversos tipos de pets
+            </Text>
+            <Button href="/">Quero agendar!</Button>
           </div>
-          <img
-          src={img}
-          alt=""
-        /> 
-
-        </div>
-      </section>
+          <div>
+          <Img src={img} />
+          </div>
+        </Container>
+      </Wrapper>
    </>
   )
 }

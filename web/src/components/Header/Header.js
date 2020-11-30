@@ -2,12 +2,12 @@ import React from 'react'
 import logo from '../../assets/Halloween.svg'
 
 
-import {Container, Img, Item, List, NavLink} from './styles';
+import {Container, Img, Item, List, LogoName, NavLink} from './styles';
 const Header = () => {
   return (
         <>
         <Container>
-      <Img src={logo} />  
+          <LogoName>Petty</LogoName>
       <nav>      
           <List>
               <Item>
