@@ -9,8 +9,20 @@ import catrelax from '../../assets/catrelax.png';
 import difPets from '../../assets/difpets.png';
 
 import {
-  Wrapper, Container, Title, Text, Span, Button, Img, Spec, GridBox, Box, SpecTitle, SpecImg,
+  Wrapper,
+  Container,
+  Title,
+  Text,
+  Span,
+  Button,
+  Img,
+  Spec,
+  GridBox,
+  Box,
+  SpecTitle,
+  SpecImg,
 } from './styles';
+import Footer from '../../components/Footer';
 
 const Main = () => (
   <>
@@ -63,6 +75,7 @@ const Main = () => (
         </GridBox>
       </Spec>
     </Wrapper>
+    <Footer />
   </>
 );
 

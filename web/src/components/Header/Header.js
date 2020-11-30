@@ -11,7 +11,7 @@ const Header = () => (
       <nav>
         <List>
           <Item>
-            <NavLink to="/login">Especialidades</NavLink>
+            <NavLink to="/especialidades">Especialidades</NavLink>
           </Item>
           <Item>
             <NavLink to="/">Serviços</NavLink>

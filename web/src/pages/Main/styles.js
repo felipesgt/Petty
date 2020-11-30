@@ -51,6 +51,7 @@ display: inline-block;
 export const Spec = styled.div`
   display: flex;
   width: 100%;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 20px;
