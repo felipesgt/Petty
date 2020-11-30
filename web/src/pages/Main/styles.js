@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-export const Wrapper = styled.div `
+
+export const Wrapper = styled.div`
 width: 100%;
 display: flex;
 padding-right: 10rem;
@@ -8,8 +9,8 @@ margin-right: auto;
 margin-left: auto;
 justify-content: center;
 flex-direction: column;
-`
-export const Container = styled.div `
+`;
+export const Container = styled.div`
   display: flex;
   padding: 1.5rem;
   justify-content: center;
@@ -17,25 +18,25 @@ export const Container = styled.div `
   flex-direction: row;
   padding-top: 2.88rem;
   
-`
-export const Text = styled.p `
+`;
+export const Text = styled.p`
   font-size: 1.8rem;
   line-height: 3.2rem;
   margin: 10px 0px 0px;
-`
+`;
 
-export const Title = styled.h2 ` 
+export const Title = styled.h2` 
   color: rgb(75, 75, 75);
   font-size: 3.6rem;
   line-height: 4.6rem;
-`
-export const Img = styled.img `
+`;
+export const Img = styled.img`
     width: 50rem;
-`
-export const Span = styled.span `
+`;
+export const Span = styled.span`
   color: #1da1f2;
-`
-export const Button = styled.a ` 
+`;
+export const Button = styled.a` 
 display: inline-block;
   font-size: 1.6rem;
   font-weight: 600;
@@ -46,24 +47,30 @@ display: inline-block;
   text-decoration: none;
   border-radius: 5px;
   transition: all 150ms linear 0s;
-`
-export const Spec = styled.div `
+`;
+export const Spec = styled.div`
   display: flex;
   width: 100%;
   justify-content: center;
   flex-direction: column;
-  padding: 10px;
-`
-export const GridBox = styled.div `
+  padding: 20px;
+`;
+export const GridBox = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 45px;
+  grid-gap: 49px;
   
-`
-export const Box = styled.div `
+`;
+export const Box = styled.div`
   padding: 10px;
-`
-export const SpecTitle = styled.h3 `
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+export const SpecTitle = styled.h3`
     font-weight: 700;
     color: #11B8C6;
-`
+`;
+export const SpecImg = styled.img`
+    width: ${(props) => props.imgSize}
+`;

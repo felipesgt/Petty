@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-const Especialidades = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const Especialidades = () => (
+  <div />
+);
 
-export default Especialidades
+export default Especialidades;

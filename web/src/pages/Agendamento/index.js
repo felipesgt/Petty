@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-const Agendamento = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const Agendamento = () => (
+  <div />
+);
 
-export default Agendamento
+export default Agendamento;
