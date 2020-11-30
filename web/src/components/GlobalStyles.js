@@ -10,12 +10,13 @@ const GlobalStyles = createGlobalStyle `
       margin: 0;
       font-family: 'Comfortaa', cursive;
       font-size: 62.5%;
+      min-height: 100%;
+      position: relative;
+      background-color: #eff2f1;
       line-height: 1.5;
       color: #212529;
       text-align: left;
-      min-height: 0;
-      max-height: 100%;
-      overflow: hidden;
+      overflow: auto;
     }
     body {
       font-size: 1.6rem;

@@ -1,18 +1,22 @@
 import styled from 'styled-components';
 export const Wrapper = styled.div `
-width: 100vw;
+width: 100%;
 display: flex;
+padding-right: 10rem;
+padding-left: 12rem;
+margin-right: auto;
+margin-left: auto;
 justify-content: center;
-background-color: #eff2f1;
+flex-direction: column;
 `
 export const Container = styled.div `
-  width: 90%;
   display: flex;
-  margin-left: 5rem;
+  padding: 1.5rem;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
- div {
-    padding: 30px;
- }  
+  padding-top: 2.88rem;
+  
 `
 export const Text = styled.p `
   font-size: 1.8rem;
@@ -42,4 +46,24 @@ display: inline-block;
   text-decoration: none;
   border-radius: 5px;
   transition: all 150ms linear 0s;
+`
+export const Spec = styled.div `
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+`
+export const GridBox = styled.div `
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 45px;
+  
+`
+export const Box = styled.div `
+  padding: 10px;
+`
+export const SpecTitle = styled.h3 `
+    font-weight: 700;
+    color: #11B8C6;
 `

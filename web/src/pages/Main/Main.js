@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../../components/Header/Header';
 import img from '../../assets/husky-nobg.png'
-import {Wrapper, Container, Title, Text, Span, Button, Img} from './styles';
+import {Wrapper, Container, Title, Text, Span, Button, Img, Spec, GridBox, Box, SpecTitle} from './styles';
 const Main = () => {
   return (
         <>
@@ -17,10 +17,37 @@ const Main = () => {
             </Text>
             <Button href="/">Quero agendar!</Button>
           </div>
-          <div>
           <Img src={img} />
-          </div>
         </Container>
+        <Spec>
+          <Title>Especialidades</Title>
+          <GridBox>
+          <Box>
+            <p>img</p>
+            <SpecTitle>Animais Silvestres</SpecTitle>
+          </Box>
+          <Box>
+            <p>Title</p>
+            <SpecTitle>Cirurgia Geral</SpecTitle>
+          </Box>
+          <Box>
+            <p>Title</p>
+            <SpecTitle>Células-Tronco</SpecTitle>
+          </Box>
+          <Box>
+            <p>Title</p>
+            <SpecTitle>Anestesia</SpecTitle>
+          </Box>
+          <Box>
+            <p>Title</p>
+            <SpecTitle>Cardiologia</SpecTitle>
+          </Box>
+          <Box>
+            <p>Title</p>
+            <SpecTitle>Comportamental</SpecTitle>
+          </Box>
+          </GridBox>
+        </Spec>
       </Wrapper>
    </>
   )
