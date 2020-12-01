@@ -5,10 +5,14 @@ import Footer from '../../components/Footer';
 import Input from '../../components/Input';
 
 import {
-  Banner, Container, Title, Text, Form,
+  Banner, Container, Title, Text, Form, Button,
 } from './styles';
 import Select from '../../components/Select';
+import Textarea from '../../components/Textarea';
 
+function handleSubmit(e) {
+  e.preventDefault();
+}
 const Agendamento = () => (
   <>
     <Header />
@@ -19,11 +23,14 @@ const Agendamento = () => (
         Faça já um pré agendamento e acelere o seu atendimento!
         Lembramos que as Consultas Clínicas são por ordem de chegada.
       </Text>
-      <Form>
+      <Form onSubmit={handleSubmit}>
         <Input name="name" label="Nome" />
         <Input name="email" label="Email" />
         <Input name="telefone" label="Telefone" />
         <Select name="Unidade" />
+        <Textarea label="Descreva o seu problema" />
+        <Button type="submit">Enviar</Button>
+
       </Form>
     </Container>
     <Footer />

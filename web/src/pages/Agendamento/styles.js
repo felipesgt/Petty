@@ -8,7 +8,6 @@ export const Container = styled.div`
   align-items: center;
   height: 100vh;
   width: 100vw;
-  padding: 1.5rem;
    `;
 
 export const Title = styled.h2` 
@@ -26,7 +25,6 @@ export const Text = styled.p`
 
 export const Form = styled.form`
   text-align: left;
-  margin: 25px auto 0;
   color: #1da1f2;
   width: 300px;
   padding: 15px;
@@ -35,6 +33,23 @@ export const Form = styled.form`
   flex-direction: column;
   align-items: center;
 `;
+
+export const Button = styled.button`
+  background: #1da1f2;
+  border: 0;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-decoration: none;
+  width: 100%;
+  height: 3.6rem;
+
+`;
+
 export const Banner = styled.div` 
   background-image: url(${banner});
   background-size: cover;

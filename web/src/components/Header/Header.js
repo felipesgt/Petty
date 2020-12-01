@@ -7,7 +7,9 @@ import {
 const Header = () => (
   <>
     <Container>
-      <LogoName>Petty</LogoName>
+      <NavLink to="/">
+        <LogoName>Petty</LogoName>
+      </NavLink>
       <nav>
         <List>
           <Item>

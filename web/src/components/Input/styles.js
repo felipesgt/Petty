@@ -2,7 +2,15 @@ import styled from 'styled-components';
 
 export const InputBlock = styled.div`
     margin-top: 1.4rem;
-
+    :focus-within::after{
+      width: calc(100% - 3.2rem);
+      height: 2px;
+      content: '';
+      position: absolute;
+      left: 1.6rem;
+      right: 1.6rem;
+      bottom: 0;
+    }
 `;
 export const Field = styled.input` 
   width: 100%;

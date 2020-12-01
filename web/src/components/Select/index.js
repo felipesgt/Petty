@@ -6,7 +6,7 @@ const Select = ({ name }) => (
   <SelectBlock>
     <Label>{name}</Label>
     <SelectItem>
-      <option selected="">Selecione uma opção</option>
+      <option>Selecione uma opção</option>
       <option value="Barra da Tijuca">
         Barra da Tijuca
       </option>
