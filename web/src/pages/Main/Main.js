@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
+
 import img from '../../assets/husky-nobg.png';
 import cardio from '../../assets/cardiologia.svg';
 import bisturi from '../../assets/bisturi.svg';
@@ -27,7 +28,7 @@ import Footer from '../../components/Footer';
 const Main = () => (
   <>
     <Header />
-    <Wrapper class="hero">
+    <Wrapper>
       <Container>
         <div>
           <Title>
@@ -49,11 +50,11 @@ const Main = () => (
         <Title>Especialidades</Title>
         <GridBox>
           <Box>
-            <SpecImg imgSize="24rem" src={difPets} />
+            <SpecImg imgSize="20rem" src={difPets} />
             <SpecTitle>Animais Silvestres</SpecTitle>
           </Box>
           <Box>
-            <SpecImg imgSize="15rem" src={bisturi} />
+            <SpecImg imgSize="14rem" src={bisturi} />
             <SpecTitle>Cirurgia Geral</SpecTitle>
           </Box>
           <Box>
