@@ -20,22 +20,36 @@ export const Text = styled.p`
   @media (max-width: 768px) {
       font-size: 1.5rem;
   }
+  @media (max-width: 360px) {
+      font-size: 1.3rem;
+  }
 `;
 
 export const Title = styled.h2` 
-  color: rgb(75, 75, 75);
+  color: #f79800;
   font-size: 3.6rem;
   line-height: 4.6rem;
 `;
 export const Row = styled.div`
   display: flex;
-  
+  @media (max-width: 1024px) {
+    justify-content: center;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 export const GridBox = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 49px;
-
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 360px) {
+    grid-template-columns: 1fr;
+  }
+  
 `;
 
 export const Box = styled.div`
@@ -55,4 +69,10 @@ export const BoxText = styled.h2`
     font-size: 21px;
     font-weight: 700;
     color: #11B8C6;
+`;
+export const Img = styled.img`
+  width: 60rem;
+  @media (max-width: 360px) {
+    width: 40rem;
+  }
 `;

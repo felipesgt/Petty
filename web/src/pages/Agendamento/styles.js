@@ -9,8 +9,6 @@ export const Container = styled.div`
   height: 100vh;
   width: 100vw;
   margin-bottom: 30px;
-
-  }
    `;
 
 export const Title = styled.h2` 

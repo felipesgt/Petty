@@ -6,8 +6,9 @@ export const Container = styled.div`
       background-color: #212529;
       color: #fff;
       width: 100%
-      max-height: 100px;z
+      max-height: 100px;
 `;
+
 export const Block = styled.div` 
     padding-right: 25px;
     padding-left: 25px;

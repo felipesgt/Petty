@@ -3,7 +3,7 @@ import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer';
 
 import {
-  Container, Text, Title, Row, GridBox, Box, BoxText,
+  Container, Text, Title, Row, GridBox, Box, BoxText, Img,
 } from './styles';
 import bulldog from '../../assets/bulldog.png';
 
@@ -27,7 +27,7 @@ const Serviços = () => (
         </Text>
       </div>
       <Row>
-        <img src={bulldog} alt="desenho de um bulldog usando o notebook" />
+        <Img src={bulldog} alt="desenho de um bulldog usando o notebook" />
         <GridBox>
           <Box>
             <BoxText>Vacinação</BoxText>
