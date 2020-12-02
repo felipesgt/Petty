@@ -5,12 +5,13 @@ export const TextBlock = styled.div`
 `;
 
 export const TxtArea = styled.textarea` 
+
   width: 100%;
-  height: 3.6rem;
+  height: 5.2rem;
   margin-top: 0.8rem;
   border-radius: 0.7rem;
   outline: 0;
-  resize: vertical;
+  resize: none;
   padding: 1.2rem 1.6rem;
 `;
 

@@ -8,10 +8,11 @@ export const Container = styled.div`
   align-items: center;
   height: 100vh;
   width: 100vw;
+  margin-bottom: 30px;
    `;
 
 export const Title = styled.h2` 
-  color: rgb(75, 75, 75);
+  color: #f79800;
   font-size: 3.6rem;
   line-height: 4.6rem;
   `;
@@ -27,11 +28,7 @@ export const Form = styled.form`
   text-align: left;
   color: #1da1f2;
   width: 300px;
-  padding: 15px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  padding: 10px;
 `;
 
 export const Button = styled.button`
