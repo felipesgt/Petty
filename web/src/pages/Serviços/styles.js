@@ -27,30 +27,32 @@ export const Title = styled.h2`
   font-size: 3.6rem;
   line-height: 4.6rem;
 `;
-
+export const Row = styled.div`
+  display: flex;
+  
+`;
 export const GridBox = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 49px;
 
-  @media (max-width: 768px) {
-   grid-template-columns: repeat(1, 1fr); 
-  }
 `;
 
 export const Box = styled.div`
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: block;
+    width: 100%;
+    height: 20rem;
+    background: #fff;
+    padding: 40px 10px 62px;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 32px;
+    border: 1px solid #fff;
+    box-shadow: 0 15px 19px rgba(0, 0, 0, 0.08);
 `;
-export const SpecTitle = styled.h3`
+
+export const BoxText = styled.h2`
+    font-size: 21px;
     font-weight: 700;
     color: #11B8C6;
-`;
-export const SpecImg = styled.img`
-    width: ${(props) => props.imgSize};
-    @media (max-width: 360px) {
-      width: 20rem;
-  }
 `;

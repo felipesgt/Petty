@@ -1,16 +1,11 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
-import {
-  Box,
-  Container, GridBox, Text, Title, SpecImg, SpecTitle,
-} from './styles';
+import Footer from '../../components/Footer';
 
-import cardio from '../../assets/cardiologia.svg';
-import bisturi from '../../assets/bisturi.svg';
-import dna from '../../assets/dna.svg';
-import injecao from '../../assets/injecao.svg';
-import catrelax from '../../assets/catrelax.png';
-import difPets from '../../assets/difpets.png';
+import {
+  Container, Text, Title, Row, GridBox, Box, BoxText,
+} from './styles';
+import bulldog from '../../assets/bulldog.png';
 
 const Serviços = () => (
   <>
@@ -19,67 +14,43 @@ const Serviços = () => (
       <div>
         <Title>Serviços</Title>
         <Text>
-          Petty é uma clínica Veterinária completa, nossas instalações atendem
-          a diversas Serviços,
-          trazendo os mais avançados recursos de saúde para a Medicina Veterinária.
-          Para atender ao seu animal contamos com uma equipe capacitada e especializada nas
-          mais variadas disciplinas.
-          Tudo para proporcionar os melhores tratamentos com seriedade e total comprometimento.
+          A Petty é uma clínica veterinária completa e oferece tudo que você,
+          seu cão e gato precisam! A infraestrutura,
+          tecnologia e corpo clínico são totalmente integrados para,
+          da melhor forma, oferecer medicina de excelência e comodidade aos pets e aos tutores.
+          Além de atender a diversas especialidades com profissionais capacitados,
+          oferecemos  exames, consultas, vacinação, hotel, banho e tosa,
+          e também dispomos de centro cirúrgico, laboratório,
+          internação e UTI altamente tecnológicos,
+          atendendo a qualquer necessidade do cão e gato com o melhor atendimento veterinário
+          disponível no país
         </Text>
       </div>
-      <div>
+      <Row>
+        <img src={bulldog} alt="desenho de um bulldog usando o notebook" />
         <GridBox>
           <Box>
-            <SpecImg imgSize="24rem" src={difPets} />
-            <SpecTitle>Animais Silvestres</SpecTitle>
+            <BoxText>Vacinação</BoxText>
           </Box>
           <Box>
-            <SpecImg imgSize="15rem" src={bisturi} />
-            <SpecTitle>Cirurgia Geral</SpecTitle>
+            <BoxText>Microchip</BoxText>
           </Box>
           <Box>
-            <SpecImg imgSize="15rem" src={dna} />
-            <SpecTitle>Células-Tronco</SpecTitle>
+            <BoxText>Banho/Tosa</BoxText>
           </Box>
           <Box>
-            <SpecImg imgSize="15rem" src={injecao} />
-            <SpecTitle>Anestesia</SpecTitle>
+            <BoxText>Hospitalização</BoxText>
           </Box>
           <Box>
-            <SpecImg imgSize="15rem" src={cardio} />
-            <SpecTitle>Cardiologia</SpecTitle>
+            <BoxText>Clinica Geral</BoxText>
           </Box>
           <Box>
-            <SpecImg imgSize="15rem" src={catrelax} />
-            <SpecTitle>Neurologia</SpecTitle>
-          </Box>
-          <Box>
-            <SpecImg imgSize="15rem" src={catrelax} />
-            <SpecTitle>Ortopedia</SpecTitle>
-          </Box>
-          <Box>
-            <SpecImg imgSize="15rem" src={catrelax} />
-            <SpecTitle>Oncologia</SpecTitle>
-          </Box>
-          <Box>
-            <SpecImg imgSize="15rem" src={catrelax} />
-            <SpecTitle>Radiologia</SpecTitle>
-          </Box>
-          <Box>
-            <SpecImg imgSize="15rem" src={catrelax} />
-            <SpecTitle>Odontologia</SpecTitle>
-          </Box>
-          <Box>
-            <SpecImg imgSize="15rem" src={catrelax} />
-            <SpecTitle>Endoscopia</SpecTitle>
-          </Box>
-          <Box>
-            <SpecImg imgSize="15rem" src={catrelax} />
-            <SpecTitle>Nutrição</SpecTitle>
+            <BoxText>Pet Shop</BoxText>
           </Box>
         </GridBox>
-      </div>
+      </Row>
     </Container>
+    <Footer />
   </>
 );
 
