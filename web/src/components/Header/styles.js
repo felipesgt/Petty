@@ -24,7 +24,8 @@ export const BurguerMenu = styled.div`
     justify-content: space-around;
     flex-flow: column nowrap;
   }
-
+  @media (max-width: 360px) {
+  }
   div {
     width: 3.3rem;
     height: 0.65rem;
@@ -61,10 +62,16 @@ export const List = styled.ul`
     width: 300px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
-`;
+    @media (max-width: 768px) {
+      width: 200px;
+      margin-top: 45px;      
+    }`;
 
 export const Item = styled.li`
   list-style: none;
+  @media (max-width: 360px) {
+    padding: 5px;
+  }
 `;
 export const NavLink = styled(Link)`
   text-decoration: none;

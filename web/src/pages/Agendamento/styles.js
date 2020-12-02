@@ -9,12 +9,15 @@ export const Container = styled.div`
   height: 100vh;
   width: 100vw;
   margin-bottom: 30px;
+
+  }
    `;
 
 export const Title = styled.h2` 
   color: #f79800;
   font-size: 3.6rem;
   line-height: 4.6rem;
+ 
   `;
 
 export const Text = styled.p` 
@@ -22,6 +25,14 @@ export const Text = styled.p`
   line-height: 3.2rem;
   margin: 10px 0px 0px;
   width: 500px;
+  @media (max-width: 540px) {
+      width: 400px;
+  }
+  @media (max-width: 360px) {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    width: 300px;
+  }
   `;
 
 export const Form = styled.form`
