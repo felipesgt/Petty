@@ -11,6 +11,7 @@ import dna from '../../assets/dna.svg';
 import injecao from '../../assets/injecao.svg';
 import catrelax from '../../assets/catrelax.png';
 import difPets from '../../assets/difpets.png';
+import Footer from '../../components/Footer';
 
 const Especialidades = () => (
   <>
@@ -80,6 +81,7 @@ const Especialidades = () => (
         </GridBox>
       </div>
     </Container>
+    <Footer />
   </>
 );
 
