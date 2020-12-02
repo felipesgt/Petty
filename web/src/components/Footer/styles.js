@@ -18,3 +18,8 @@ export const Logo = styled.h2`
   color: #1da1f2;
   font-size: 2.9rem;
 `;
+export const Icons = styled.img` 
+width: 5rem;
+margin-top: 15px;
+padding: 3px;
+`;
