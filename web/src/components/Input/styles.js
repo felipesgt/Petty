@@ -10,7 +10,9 @@ export const InputBlock = styled.div`
       left: 1.6rem;
       right: 1.6rem;
       bottom: 0;
+    
     }
+  
 `;
 export const Field = styled.input` 
   width: 100%;
@@ -20,6 +22,7 @@ export const Field = styled.input`
   outline: 0;
   padding: 0 1.6rem;
   font-size: 1.6rem;
+
 `;
 export const Label = styled.label` 
   font-size: 1.4rem;

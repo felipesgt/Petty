@@ -16,18 +16,33 @@ export const Row = styled.div`
   display: flex;
   justify-content: center;
   padding: 20px;
+  @media(max-width: 768px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 export const MapArea = styled.div`
 display: flex;
 flex-direction: column;
 padding: 50px;
+@media(max-width: 360px) {
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  }
 `;
 export const ContactArea = styled.div`
 display: flex;
 flex-direction: column;
 padding: 50px;
+@media(max-width: 360px) {
+    justify-content: center;
+    align-items: center;
+    }
 `;
 export const Img = styled.img`
 width: 25rem;
+@media(max-width: 360px) {
+  width: 15rem;
+  }
 `;
