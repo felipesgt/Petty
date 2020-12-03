@@ -28,7 +28,7 @@ export const Container = styled.div`
 
 export const Text = styled.p`
   font-size: 1.8rem;
-  line-height: 3.2rem;
+  line-height: 2.52rem;
   margin: 10px 0px 0px;
   @media (max-width: 360px) {
     font-size: 1.6rem;
@@ -39,7 +39,7 @@ export const Text = styled.p`
 export const Title = styled.h2` 
   color: rgb(75, 75, 75);
   font-size: 3.6rem;
-  line-height: 4.6rem;
+  line-height: 5.04rem;
   @media (max-width: 360px) {
     font-size: 2.6rem;
     line-height: 2.6rem;
@@ -99,7 +99,6 @@ export const Box = styled.div`
   align-items: center;
 `;
 export const SpecTitle = styled.h3`
-    font-weight: 700;
     color: #11B8C6;
   
 `;
