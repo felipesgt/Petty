@@ -7,6 +7,7 @@ import {
   Container, Title, Row, MapArea, ContactArea, Img,
 } from './styles';
 import Maps from '../../components/Map';
+import Button from '../../components/Button';
 
 function Contato() {
   const location = {
@@ -33,6 +34,7 @@ function Contato() {
               <Input label="Email" />
               <Input label="Nome" />
             </form>
+            <Button text="Enviar" />
           </ContactArea>
         </Row>
       </Container>

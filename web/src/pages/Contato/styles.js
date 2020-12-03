@@ -24,7 +24,7 @@ export const Row = styled.div`
 export const MapArea = styled.div`
 display: flex;
 flex-direction: column;
-padding: 50px;
+padding: 55px;
 @media(max-width: 360px) {
   padding: 0px;
   justify-content: center;
@@ -33,8 +33,12 @@ padding: 50px;
 `;
 export const ContactArea = styled.div`
 display: flex;
+align-items: center;
 flex-direction: column;
-padding: 50px;
+padding: 55px;
+form {
+  padding: 15px;
+}
 @media(max-width: 360px) {
     justify-content: center;
     align-items: center;

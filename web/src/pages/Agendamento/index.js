@@ -5,10 +5,11 @@ import Footer from '../../components/Footer';
 import Input from '../../components/Input';
 
 import {
-  Banner, Container, Title, Text, Form, Button,
+  Banner, Container, Title, Text, Form,
 } from './styles';
 import Select from '../../components/Select';
 import Textarea from '../../components/Textarea';
+import Button from '../../components/Button';
 
 function handleSubmit(e) {
   e.preventDefault();
@@ -29,7 +30,7 @@ const Agendamento = () => (
         <Input name="telefone" label="Telefone" />
         <Select name="Unidade" />
         <Textarea label="Descreva o seu problema" />
-        <Button type="submit">Enviar</Button>
+        <Button text="Enviar" />
 
       </Form>
     </Container>
