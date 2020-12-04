@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 import {
   Box,
@@ -37,7 +36,7 @@ const Especialidades = () => (
           </Box>
           <Box>
             <SpecImg imgSize="15rem" src={bisturi} />
-            <Link to="/cirurgia"><SpecTitle>Cirurgia Geral</SpecTitle></Link>
+            <SpecTitle>Cirurgia Geral</SpecTitle>
           </Box>
           <Box>
             <SpecImg imgSize="15rem" src={dna} />

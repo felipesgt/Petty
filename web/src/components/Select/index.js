@@ -2,9 +2,9 @@
 import React from 'react';
 import { Label, SelectBlock, SelectItem } from './styles';
 
-const Select = ({ name }) => (
+const Select = ({ label, name }) => (
   <SelectBlock>
-    <Label>{name}</Label>
+    <Label htmlFor={name}>{label}</Label>
     <SelectItem>
       <option>Selecione uma opção</option>
       <option value="Barra da Tijuca">
