@@ -1,2 +1,2 @@
 # Petty
-Um website de uma cliníca veterinária
+Um website de uma clínica veterinária
