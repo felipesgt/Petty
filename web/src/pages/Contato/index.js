@@ -1,8 +1,10 @@
 import React from 'react';
+
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer';
 import Input from '../../components/Input';
 import dogdrink from '../../assets/dogdrink.png';
+
 import {
   Container, Title, Row, MapArea, ContactArea, Img,
 } from './styles';

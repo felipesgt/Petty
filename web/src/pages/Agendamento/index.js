@@ -27,6 +27,7 @@ function Agendamento() {
     data.append('telefone', telefone);
     data.append('unidade', unidade);
     data.append('problema', problema);
+    return true;
   }
   return (
     <>
@@ -43,31 +44,43 @@ function Agendamento() {
             data-testid="nome"
             name="name"
             label="Nome"
+            required
             value={nome}
             onChange={(e) => setNome(e.target.value)}
           />
+
           <Input
+            required
             name="email"
             label="Email"
             onChange={(e) => setEmail(e.target.value)}
+            value={email}
           />
+
           <Input
+            required
             name="telefone"
             label="Telefone"
             onChange={(e) => setTelefone(e.target.value)}
+
           />
           <Select
+            required
             name="Unidade"
+            value={unidade}
             onChange={(e) => setUnidade(e.target.value)}
           />
           <Textarea
+            required
             name="Problema"
+            value={problema}
             label="Descreva o seu problema"
             onChange={(e) => setProblema(e.target.value)}
           />
-          <Button text="Enviar" />
+          <Button type="submit" text="Enviar" />
 
         </Form>
+
       </Container>
       <Footer />
     </>
