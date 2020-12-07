@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 
+import { useHistory } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer';
 import Input from '../../components/Input';
@@ -11,22 +12,31 @@ import {
 import Select from '../../components/Select';
 import Textarea from '../../components/Textarea';
 import Button from '../../components/Button';
+import http from '../../services/api';
 
 function Agendamento() {
+  const history = useHistory();
+
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [telefone, setTelefone] = useState('');
   const [unidade, setUnidade] = useState('');
   const [problema, setProblema] = useState('');
-
   function handleSubmit(e) {
     e.preventDefault();
-    const data = new FormData();
-    data.append('nome', nome);
-    data.append('email', email);
-    data.append('telefone', telefone);
-    data.append('unidade', unidade);
-    data.append('problema', problema);
+    http.post('schedule', {
+      nome,
+      email,
+      telefone,
+      unidade,
+      problema,
+    }).then(() => {
+      alert('Agendamento realizado com sucesso');
+      history.push('/');
+    }).catch(() => {
+      alert('Erro ao criar agendamento');
+    });
+
     return true;
   }
   return (
