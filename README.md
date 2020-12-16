@@ -2,7 +2,7 @@
   Petty
 </h1>
 <h3 align="center">
-Um website de uma clínica veterinária
+Um website de uma clínica veterinária ainda em construção.
 </h3>
 <p align="center">
 <a href="https://www.linkedin.com/in/felipe-gon%C3%A7alves-33bb09187/">
