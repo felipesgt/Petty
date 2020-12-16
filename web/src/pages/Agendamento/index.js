@@ -17,19 +17,19 @@ import http from '../../services/api';
 function Agendamento() {
   const history = useHistory();
 
-  const [nome, setNome] = useState('');
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [telefone, setTelefone] = useState('');
-  const [unidade, setUnidade] = useState('');
-  const [problema, setProblema] = useState('');
+  const [phone, setPhone] = useState('');
+  const [location, setLocation] = useState('');
+  const [problem, setProblem] = useState('');
   function handleSubmit(e) {
     e.preventDefault();
     http.post('schedule', {
-      nome,
+      name,
       email,
-      telefone,
-      unidade,
-      problema,
+      phone,
+      location,
+      problem,
     }).then(() => {
       alert('Agendamento realizado com sucesso');
       history.push('/');
@@ -51,12 +51,12 @@ function Agendamento() {
         </Text>
         <Form data-testid="form" onSubmit={handleSubmit}>
           <Input
-            data-testid="nome"
+            data-testid="name"
             name="name"
             label="Nome"
             required
-            value={nome}
-            onChange={(e) => setNome(e.target.value)}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
           />
 
           <Input
@@ -69,23 +69,24 @@ function Agendamento() {
 
           <Input
             required
-            name="telefone"
+            name="phone"
             label="Telefone"
-            onChange={(e) => setTelefone(e.target.value)}
+            onChange={(e) => setPhone(e.target.value)}
 
           />
           <Select
             required
             name="Unidade"
-            value={unidade}
-            onChange={(e) => setUnidade(e.target.value)}
+            label="Unidade"
+            value={location}
+            onChange={(e) => setLocation(e.target.value)}
           />
           <Textarea
             required
-            name="Problema"
-            value={problema}
-            label="Descreva o seu problema"
-            onChange={(e) => setProblema(e.target.value)}
+            name="problem"
+            value={problem}
+            label="Descreva o seu problem"
+            onChange={(e) => setProblem(e.target.value)}
           />
           <Button type="submit" text="Enviar" />
 

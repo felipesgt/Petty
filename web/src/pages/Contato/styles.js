@@ -9,7 +9,7 @@ export const Container = styled.div`
 export const Title = styled.h2`
   line-height: 1.1rem;
   font-size: 2.5rem;
-  color: #11B8C6;
+  color: #f79800;
   
 `;
 export const Row = styled.div`

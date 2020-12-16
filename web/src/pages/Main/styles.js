@@ -16,20 +16,21 @@ flex-direction: column;
 `;
 export const Container = styled.div`
   display: flex;
-  padding: 1.5rem;
+  padding-left: 1rem;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  padding-top: 2.88rem;
   @media (max-width: 1024px) {
     flex-direction: column-reverse;
   }
 `;
 
 export const Text = styled.p`
-  font-size: 1.8rem;
-  line-height: 2.52rem;
-  margin: 10px 0px 0px;
+  color: rgba(0,0,0,.54);
+  font-size: 2.4rem;
+  font-weight: lighter;
+  line-height: 3.2rem;
+  margin: 18px 0 42px;
   @media (max-width: 360px) {
     font-size: 1.6rem;
     line-height: 1.6rem;
@@ -37,9 +38,9 @@ export const Text = styled.p`
 `;
 
 export const Title = styled.h2` 
-  color: rgb(75, 75, 75);
-  font-size: 3.6rem;
-  line-height: 5.04rem;
+    color: rgba(0,0,0,.87);
+  font-size: 4.2rem;
+  line-height: 4.9rem;
   @media (max-width: 360px) {
     font-size: 2.6rem;
     line-height: 2.6rem;
@@ -73,7 +74,6 @@ export const Button = styled.a`
 export const Spec = styled.div`
   display: flex;
   width: 100%;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 20px;
@@ -83,7 +83,7 @@ export const Spec = styled.div`
 export const GridBox = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 49px;
+  grid-gap: 85px;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr 1fr;
@@ -92,8 +92,9 @@ export const GridBox = styled.div`
     grid-template-columns: 1fr;
   }
 `;
+
 export const Box = styled.div`
-  padding: 10px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;

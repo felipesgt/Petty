@@ -25,4 +25,4 @@ const ScheduleSchema = new Schema({
   },
 });
 
-export default new model('User', ScheduleSchema);
+export default new model('Schedule', ScheduleSchema);

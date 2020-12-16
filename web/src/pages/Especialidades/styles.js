@@ -23,7 +23,7 @@ export const Text = styled.p`
 `;
 
 export const Title = styled.h2` 
-  color: rgb(75, 75, 75);
+  color: #f79800;
   font-size: 3.6rem;
   line-height: 4.6rem;
 `;

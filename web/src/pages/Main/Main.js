@@ -32,14 +32,14 @@ const Main = () => (
       <Container>
         <div>
           <Title>
-            Aqui na Petty seu
+            Na Petty seu
             {' '}
             <Span>pet</Span>
             {' '}
-            tem o cuidado e carinho que merece
+            tem o cuidado e atenção que merece
           </Title>
           <Text>
-            Atendimento especializado 24 horas para diversos tipos de pets
+            Atendimento especializado e com segurança 24 horas para diversos tipos de pets
           </Text>
           <Button href="/">Quero agendar!</Button>
         </div>

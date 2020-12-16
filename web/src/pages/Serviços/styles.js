@@ -9,6 +9,9 @@ export const Container = styled.div`
   margin-left: auto;
   justify-content: center;
   flex-direction: column;
+  div {
+    padding: 10px;
+  }
   @media (max-width: 768px) {
       padding: 0;
   }
@@ -16,7 +19,7 @@ export const Container = styled.div`
 
 export const Text = styled.p`
   font-size: 1.8rem;
-  margin: 10px 0px 0px;
+  margin: 10px 15px 0px;
   @media (max-width: 768px) {
       font-size: 1.5rem;
   }
@@ -30,6 +33,7 @@ export const Title = styled.h2`
   font-size: 3.6rem;
   line-height: 4.6rem;
 `;
+
 export const Row = styled.div`
   display: flex;
   @media (max-width: 1024px) {
@@ -39,6 +43,7 @@ export const Row = styled.div`
     flex-direction: column;
   }
 `;
+
 export const GridBox = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -55,9 +60,9 @@ export const GridBox = styled.div`
 export const Box = styled.div`
     display: block;
     width: 100%;
-    height: 20rem;
+    height: 19rem;
     background: #fff;
-    padding: 40px 10px 62px;
+    padding: 49px 25px 62px;
     text-align: center;
     border-radius: 15px;
     margin-bottom: 32px;
