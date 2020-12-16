@@ -5,6 +5,9 @@ class ScheduleController {
   async store(req, res) {
     const { name, email, phone, location, problem } = req.body;
     const scheduleExists = Schedule.findOne({ where: { email } });
+    if (scheduleExists) {
+      console.log('s');
+    }
 
     const schedule = await Schedule.create({
       name,
