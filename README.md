@@ -28,17 +28,17 @@ Um website de uma clínica veterinária
 - [ReactJS](https://reactjs.org/)
 - [axios](https://github.com/axios/axios)
 - [React Router DOM](https://reacttraining.com/react-router/)
-- [Jest] (https://jestjs.io/)
-- [MongoDB] (https://www.mongodb.com/cloud/atlas)
+- [Jest](https://jestjs.io/)
+- [MongoDB](https://www.mongodb.com/cloud/atlas)
 
 ## ⚙ Executando
 
   ### *Requisitos*:
 
 - [Node.js](https://nodejs.org/en/)
-
   Caso não use o npm:
 - [Yarn](https://classic.yarnpkg.com/) 
+
 
 1. Clone o projeto com o Git.
 
